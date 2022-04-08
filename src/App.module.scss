@@ -8,3 +8,17 @@
   grid-template-columns: 1fr 453px;
   position: relative;
 }
+
+.contentSigned {
+  &:before {
+    content: '';
+
+    background: url('./assets/background.svg') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: absolute;
+    right: -200px;
+    top: 0;
+    width: 420px;
+  }
+}
