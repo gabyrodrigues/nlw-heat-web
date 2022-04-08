@@ -1,0 +1,121 @@
+.sendMessageFormWrapper {
+  align-self: center;
+  background: #1b1b1f;
+  padding: 24px;
+
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+}
+
+.signOutButton {
+  background: transparent;
+  border: 0;
+  color: #c4c4cc;
+  cursor: pointer;
+  left: 24px;
+  position: absolute;
+
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+}
+
+.userInformation {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  .userImage {
+    background: linear-gradient(100deg, #ff008e 0%, #ffcd1e 100%);
+    border-radius: 50%;
+    line-height: 0;
+    padding: 3px;
+
+
+    img {
+      border: 6px solid #121214;
+      border-radius: 50%;
+      height: 94px;
+      width: 94px;
+    }
+  }
+
+  .userName {
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 16px;
+  }
+
+  .userGithub {
+    align-items: center;
+    display: flex;
+
+    color: #c4c4cc;
+    margin-top: 8px;
+
+    svg {
+      margin-right: 8px;
+    }
+  }
+}
+
+.sendMessageForm {
+  align-self: stretch;
+  background: #202024;
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+
+  label {
+    background: #29292e;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 18px 24px;
+    text-align: left;
+  }
+
+  textarea {
+    background: transparent;
+    border: 0;
+    color: #e1e1e6;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 24px;
+    resize: none;
+
+    &:focus {
+      outline: 0;
+    }
+
+    &::placeholder {
+      color: #8d9d99;
+    }
+  }
+
+  button {
+    align-self: flex-end;
+    background: #ff008e;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    height: 40px;
+    margin: 24px;
+    padding: 0 32px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    &:hover {
+      filter: brightness(0.9)
+    }
+  }
+}
