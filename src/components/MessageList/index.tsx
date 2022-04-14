@@ -27,7 +27,7 @@ export function MessageList() {
   const [messages, setMessages] = useState<Message[]>([])
 
   useEffect(() => {
-    setInterval(() => {
+    const timer = setInterval(() => {
       if(messagesQueue.length > 0) {
         setMessages(prevState => [
           messagesQueue[0], //in array first position, insert first (oldest) message from queue
@@ -38,6 +38,8 @@ export function MessageList() {
         messagesQueue.shift()
       }
     }, 3000)
+
+    return () => clearInterval(timer)
   }, [])
 
   useEffect(() => {
